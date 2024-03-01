@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  position: relative;
 }
 
 .introducao h1 {
@@ -31,6 +32,20 @@
   font-size: 1.5rem;
   color: #525252;
 }
+
+.introducao p::after{
+  content: "";
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/Vector.png);
+  bottom:133px;
+  right: 460px;
+  
+
+}
+
+
 
 @media (max-width: 1000px) {
   .introducao h1 {
